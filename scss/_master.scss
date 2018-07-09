@@ -1,0 +1,45 @@
+$w_mw: 80rem;
+$w_w: 80%;
+$col: #fff;
+$b_bc: #260F25;
+$twoEm:2em;
+$oneEm:2em;
+$simpleBorder:1px solid;
+$colRed:#F0E3B6;
+$padd:50px;
+$paddh:.5em;
+body {
+  background-color: $b_bc;
+  .wrapper {
+    max-width: $w_mw;
+    width: $w_w;
+    margin: $oneEm auto;
+    h1 {
+      text-align: center;
+      color: $col;
+      padding: $twoEm;
+      text-transform: capitalize;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      li {
+        border:$simpleBorder;
+        padding:$paddh $padd;
+        color: $colRed;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+        &:hover{
+          color: $col;
+          transform:  scale(1.5);
+        }
+      }
+    }
+  }
+}
+.actClass{
+  background-color: red;
+  // color: red;
+}
